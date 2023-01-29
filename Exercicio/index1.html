@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Index</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1>Tags HTML: as principais tags para criar sua página HTML</h1>
+    <p>Neste artigo, vamos estudar algumas das mais importantes tags que o HTML utiliza em sua estrutura. Para começar é importante entender que o HTML é uma linguagem de marcação de hipertexto, e tem como principal função marcar e definir a estrutura de uma página na web. Saiba mais sobre HTML nesse artigo. Para esse tutorial, utilizaremos como base o HTML5, a versão mais recente do HTML.</p>
+    <p> Assim sendo, neste artigo você vai encontrar:</p>
+    <ul>
+        <li>O que são TAGs HTML?</li>
+        <li>Estrutura básica de um doumento HTML?</li>
+        <li>Tags de comentários em HTML</li>
+        <li>Tags HTML estruturais</li> 
+        <li>A tags HTML de conteúdo</li> 
+        <li>Tags de estilos e scripts</li> 
+        <li>Crie sua página em HTML</li>
+    </ul>
+    
+    <h2>O que são TAGs HTML?</h2>
+    
+    <p>As tags são usadas para informar ao navegador a estrutura do site. Ou seja: quando se escreve um código em HTML, as tags serão interpretadas pelo navegador, produzindo assim a estrutura e o conteúdo visual da página
+    </p>
+    <p>A principal característica das tags é estarem sempre dentro dos sinais de chevron (sinal de “maior que” e “menor que”), ou seja: < >.
+    </p>
+    <p>As tags HTML são divididas em dois tipos: as que precisam de fechamento e as que não precisam de fechamento. As tags que precisam de fechamento possuem a sintaxe < tag> < /tag>, já as que não precisam de fechamento possuem como estrutura < tag/>.
+    </p>
+
+    <p>Além disso, uma mesma tag pode receber um ou mais atributos, que possuirá um valor que modifica sua estrutura ou funcionalidade.
+    </p> 
+        
+    <h3> Atributos</h3>
+    <p>Os atributos são usados para personalizar as tags, modificando sua estrutura ou funcionalidade. Igualmente, os atributos são utilizados para atribuir uma classe ou id a um elemento.
+    </p> 
+        A maioria das tags tem seus próprios atributos. Contudo, existem alguns atributos genéricos que podem ser utilizados na maioria das tags HTML, vamos estudá-los:
+    </p>
+    <ul>
+        <li><b>class="..."</b> – Atribui uma classe ao elemento (uma classe pode ser utilizada para um ou mais elementos);</li>
+        <li><b>id="..."</b>– Atribui um id ao elemento (um id deve ser único, ou seja atribuído a um único elemento);</li>
+        <li><b>style=”…”</b>– Permite incluir elementos CSS (estilos) dentro da tag;</li>
+        <li><b>lang=”…”</b>– Define o idioma principal do elemento;</li>
+        <li><b>title=”…”</b> – Define o título do elemento</li>
+         <li><b>alt=”…” </b>– Define um texto alternativo e, por isso, é muito utilizado em imagens, auxilia nas práticas de SEO;</li>
+         <li><b>hidden </b>– Oculta o elemento;</li>
+         <li><b>align=”…”</b>– Permite definir o padrão de alinhamento desse elemento, como por exemplo: right, center, left e justify;</li>
+        <li><b>width=”…”</b>– Define uma largura para o elemento;</li>
+        <li><b>height=”…” </b>– Define uma altura para o elemento.</li>
+    </ul>
+    <p>Essas são os principais atributos, porém existem diversos outros que devem ser estudados e podem ser utilizados no seu código.</p> 
+    <h2> Estrutura básica de um documento HTML</h2>
+
+    <p>Um documento HTML recebe algumas tags que formam a sua estrutura básica. No HTML5, o documento padrão recebe a seguinte estrutura:</p>
+        <pre class="ex"> 
+            <!--Aprender como desfazer essa gambiarra-->
+        < !DOCTYPE html>
+        < html>
+        < head>
+            < title>Título da página< /title>
+            < meta charset="utf-8"/>
+        < /head>
+        < body>
+        
+        < /body>
+        < /html>
+        </pre>
+    <p>Em primeiro lugar, vamos agora entender para que serve cada uma dessas tags:</p>
+    <ul>
+        <li> <b>< !DOCTYPE html> </b> – A tag !DOCTYPE informa ao navegador a versão do HTML que está sendo utilizada no documento. Por exemplo: no HTML5, basta incluir !DOCTYPE html, e assim o navegador já saberá que se trata de um documento na versão HTML5;</li>
+        <li><b>< html></html></b>– Esta tag é o elemento básico da estrutura do HTML. Assim sendo, ela conterá todos os elementos do seu documento. Todo documento HTML deve iniciar e finalizar com essa tag;</li>
+        <li><b>< head></head></b>– Essa tag delimita o cabeçalho do documento. Não possui nenhum valor visível, porém é capaz de transmitir ao navegador diversas informações muito úteis e essenciais a uma boa apresentação do seu documento HTML;</li>
+        <li><b>< title></title></b>– Essa tag define o título da sua página, o nome que aparecerá na sua aba, janela ou guia. Por esta razão, a tag >title> é de grande importância para o SEO;</li>
+        <li><b>< meta/> </b>– Essa tag permite inserir metadados ao seu documento, no caso acima, a informação charset=”UTF-8″, que garante a compatibilidade do código com os caracteres de padrão latino americano;</li>
+        <li><b>< body></body> </b>– Finalmente, a tag que representa o corpo do documento. Em síntese, é nessa tag que todos os elementos visíveis do seu site devem ser inseridos.</li>
+    </ul>
+    <p>Agora que já conhecemos as tags HTML que formam a estrutura básica de uma página, podemos então estudar as diversas tags que contemplarão o documento.</p>
+    <h2>Tags de comentários em HTML</h2>
+    <p>Dentro de um documento, muitas vezes precisamos fazer comentários, para facilitar no desenvolvimento. Com isso, o código fica mais organizado e podemos deixar anotações importantes para possíveis mudanças, ou apenas para orientar o código. Dessa forma, na tag de comentários (que é aberta com <!– e fechada com –> ), todos elementos incluídos dentro dela serão apenas comentários, ou seja, não serão visíveis no navegador.
+
+    <br> ex: 
+    </p>
+    <p>< !-- Meu comentário em HTML -->
+       <br> < p>Olá Mundo< /p> < !-- aqui é o meu paragrafo--></p>
+    
+    <p>Olá Mundo</p>        
+    <P>Repare que todo conteúdo das tags de comentário não aparecerá, sendo restrito apenas a quem estiver lendo o seu código HTML. Pratique utilizar os comentários em seu código, isso é uma boa prática e muito recomendada dentro do mundo do desenvolvimento.</P>
+    <h2>Tags HTML estruturais</h2>
+    <p>As tags abaixo são utilizadas nos documentos em HTML5, e têm função estrutural no seu código. Portanto, essas tags têm grande importância na questão semântica da sua página, saber utilizá-las pode adequar o seu código para uma melhor visualização por parte do navegador e do usuário, além de proporcionar uma otimização para os processos de SEO.</p>
+    <ul>
+        <li><b>< header>< /header></b> – Essas tags definem  um cabeçalho. Portanto, todo conteúdo que estiver dentro dela faz parte de um cabeçalho, podendo ser utilizado dentro de outras seções. Não confundir com tags < head>; </li>
+        <li><b>< main>< /main></b> – Essas tags representam o conteúdo principal do seu corpo, ou seja, o conteúdo relacionado diretamente com o tópico central da página ou com a funcionalidade central da aplicação;</li>
+        <li><b>< footer>< /footer></b> – Essas tags definem um rodapé para a página, geralmente utilizadas no final da página;</li>
+        <li><b>< section>< /section></b> – Essas tags definem uma sessão para sua página; </li>
+        <li><b>< article>< /article></b> – Essas tags definem um artigo da sua página. Nesse sentido, são utilizadas para separar o conteúdo da sua página. Muito utilizado principalmente por blogs ou páginas de conteúdo;</li>
+        <li><b>< aside>< /aside></b>– Essas tags representam uma seção de uma página cujo conteúdo é tangencialmente relacionado ao conteúdo do seu entorno, que poderia ser considerado separado do conteúdo;</li>
+        <li><b>< nav>< /nav></b> – Essa tag define um conteúdo de navegação. Portanto, é muito utilizado em conjunto com listas e na criação de menus;</li> 
+        <li><b>< div>< /div></b> – Define uma divisão da página. Desta forma, funciona como um container para conteúdo de fluxo. Uma vez que não possui um valor semântico, é muito utilizado para organizar melhor o conteúdo. Anteriormente ao HTML5, era utilizado no lugar das categorias acima.</li>
+    
+    <h2>A tags HTML de conteúdo</h2>
+    <p> Agora que você já conhece as principais tags estruturais, pode organizar o seu conteúdo de forma adequada. Assim sendo, vamos listar as principais tags para incluir conteúdo à página, como títulos, parágrafos, imagens, links, etc.</p>
+        
+    <h3> Tags HTML de título</h3>
+    <p>As tags de título possuem valor semântico, variando entre seis níveis hierárquicos. Para fins de otimização SEO é importante entender como funcionam, e fazer uma utilização adequada. Para definir títulos, utilizamos as tags:</p>
+    <ul>     
+     <br> < h1>< /h1> - Título de maior valor hierárquico
+     <br> < h2>< /h2>
+     <br> < h3>< /h3>
+     <br> < h4>< /h4>
+     <br> < h5>< /h5>
+     <br>< h6>< /h6> - Título de menor valor hierárquico
+    </ul>  
+    <p>
+    Conforme dito anteriormente, a distribuição de título interferem no otimização do SEO de uma página.  Com isso, uma página contendo apenas h1 não seria bem vista pelos mecanismos de busca. Portanto, é importante dividir os títulos deixando o h1 apenas para o título principal, h2 ou h3 para títulos das seções e h4 a h6 para subtítulos ou títulos que possuam baixo valor hierárquico em relação aos demais.</p>
+    </ul>
+    <h3>Tags HTML de texto</h3>
+    <p>As tags de texto definem textos, estilos de fonte, parágrafos, spans, quebras de linhas, etc. Vamos conhecê-las:</p>
+    <ul>
+        <li><b>< p>< /p></b> – Principal tag de texto, compõe um parágrafo;</li>
+        <li><b>< span>< /span></b> – Apesar de ter uma funcionalidade e características parecidas com os parágrafos, costumam ser utilizadas apenas para pequenas informações, como legendas de um formulário, legendas de uma imagem, etc. Também pode ser utilizada para formar um container; <!--Essa eu não entendi pra que serve--></li>
+        <li><b>< pre>< /pre></b> – Tag utilizada para representar texto pré-formatado. Muito utilizada para inserir códigos;
+        <!--Entendi, mas ainda não consegui fazer--></li>
+        <li><b>< b></b>< /b> – Transforma o conteúdo em negrito;</li>
+        <li><b>< i>< /i></b> – Transforma o conteúdo em itálico;</li>
+        <li><b>< br></b> – Essa tag não necessita de fechamento, ela executa a função de quebra de linha.</li>
+        <li><b>< hr/></b> – Essa tag não necessita de fechamento, ela forma uma linha horizontal.</li>
+        <!--Gostei dessa última, vou colocar uma aqui so pra ficar bonitinho kkkk-->
+        <hr/>
+    </ul>
+    <h3>Tag de link HTML</h3>
+    <p>A tag de link HTML é responsável que faz a ligação entre um documento e outro, sendo ele da mesma página ou de uma página de outro domínio. Esse elemento garantiu que o HTML se destacasse, e moldou a internet da forma que ela é hoje! Portanto, é o principal fundamento que forma a web.</p>
+
+    <p> Para realizar um link, podemos chamar as tags < a>< /a> com o atributo href. Por exemplo, caso você queira criar um link no seu texto que redirecione à página inicial do google:</p>
+
+    <p>< p>Para acessar o Google, < a href="https://www.google.com">clique aqui.< /a>< /p></p>
+    <p>como resultado, teremos:</p>
+    <p>Para acessar o Google, <a href="https://www.google.com">clique aqui.</a></p>
+    <h3>Tags HTML de multimídia</h3>
+    <p>As tags de multimídia servem para incluir imagens, vídeos, áudios, iframes e outros tipos de conteúdo multimídia.</p>
+    <b>< img></b>
+    <p>Essa tag não necessita de fechamento, serve para incluir uma imagem ao seu texto. A partir dessa tag, utilizamos o atributo src=”” onde deve ser digitado o local em que a imagem se encontra. Também é muito utilizado em conjunto com o atributo alt para definir o texto alternativo da imagem.</p>
+    <p>Por exemplo:</p>
+    <p><pre>< img src="imagens/imagem1.jpg" alt="imagem 1 da minha página"></pre></p>
+    <b>< video> e < audio></b>
+    <p>Essa tag serve para indicar a inserção de um vídeo. Com isso, devemos colocar alguns atributos dentro da tag para poder ativar o controle, a principal dela é o controls. Posteriormente, incluímos a tag <b>< source></b> com os atributos <b>src</b> e <b>type</b>, onde receberão o local em que está o vídeo e o tipo do vídeo. É recomendado utilizar mais de um tipo de source do mesmo vídeo, para garantir maior possibilidade de compatibilidade com o navegador. Finalmente, podemos incluir uma mensagem que será renderizada apenas se o navegador do usuário não suportar a tag video.</p>
+    <p>Diante disso, vejamos os exemplos a seguir:</p>
+    <p>
+        <pre>
+        < video controls>
+            < source src="video.mp4" type="video/mp4">
+            < source src="video.ogg" type="video/ogg">
+        Seu navegador não possui suporte para Vídeos.
+        < /video></p></pre>
+    <p>A tag < audio> funciona da mesma forma que a tag < video>, portanto, utilizamos a tag < source> dentro dela. Vejamos o exemplo a seguir:</p>
+    <p>
+        <pre>
+        < audio controls>
+            < source src="musica.ogg" type="audio/ogg">
+            < source src="musica.mp3" type="audio/mpeg">
+        Seu navegador não possui suporte para áudio.
+        < /audio></pre>
+    </p>
+    <p><b>< iframe></b></p>
+    <p>Os iframes são muito utilizados na atualidade, servem para incluir recursos de uma outra página nesta página. Vale a pena conferir o exemplo da W3C Schools, pagina de tutorias pertencente ao grupo W3C, a organização atualmente responsável pelos padrões da web.</p>
+    <p>Portanto, para inserir um iframe, basta utilizar a tag com o atributo <b>src</b>. Além disso, é possível incluir um texto dentro do elemento, caso o navegador do usuário não possua suporte para tal. Vejamos então o exemplo abaixo:</p>
+    <pre>
+        < iframe src="https://www.homehost.com.br">
+        < p>Seu navegador não possui suporte para iFrames.< /p>
+      < /iframe></pre>
+    <h3>Tags HTML de listas</h3>
+    <p>Para poder criar uma lista, podemos utilizar uma lista ordenada, a partir das tags <b>< ol>< /ol></b>, ou uma lista não ordenada, a partir das tags <b>< ul>< /ul></b>.Posteriormente, incluímos dentro da lista os elementos da mesma, dentro das tags <b>< li>< /li></b>.</p>
+    <p>Vejamos os exemplos a seguir:</p>
+    <pre>
+        < p>Minha lista ordenada:< /p>
+        < ol>
+             < li>item 1< /li>
+             < li>item 2< /li>
+             < li>item 3 li>
+        <  /ol>
+        < p>Minha lista não ordenada:< /p>
+        < ul>
+            < li>item 1< /li>
+            < li>item 2< /li>
+            < li>item 3< /li>
+        < /ul>
+    </pre>
+    <h3>Tags HTML de formulário</h3>
+    <p>As tags de formulário são muito utilizadas para obter informações do usuário, realizar cadastros, receber opiniões, entre outros. São importantíssimas para qualquer ramo do mercado.</p>
+    <p>Para iniciar um formulário, incluimos as tags <b>< form> e < /form></b>. Posteriormente, devemos incluir o conteúdo do formulário. Digamos que, por exemplo, você queira incluir três campos, sendo dois para coletar informações e um para receber uma mensagem. Desta forma, para criar os campos de preenchimento, deverá utilizar a tag <b>< input></b>, enquanto para o campo referente à mensagem, deverá utilizar a tag <b>< textarea></b>.</p>
+    
+    <a href="https://www.homehost.com.br/blog/tutoriais/tags-html/#topico01:~:text=%3Ctextarea%3E.-,A%20tag%20%3Cinput%3E,-A%20tag%20%3Cinput"> link da página pra continuar depois</a>
+    
+    
+</body>
+</html>
