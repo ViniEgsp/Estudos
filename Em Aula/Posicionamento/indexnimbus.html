@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+    <link rel="stylesheet" href="">
+    <style>
+        .grid {display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        }
+        .foto {grid-column: span 3;}
+        .descr {grid-column: 1 / 3;}
+        .comprar {grid-column: 1 / 3;} 
+
+
+        /* Estilos Gerais */
+        body {
+            margin: 40px;}
+        img {width: 100%;
+            border-radius: 4px;}
+        h1, p{
+            margin: 0px;}
+        h1 {font-size: 48px;
+            line-height: 1;}
+        p, span {font-size: 20px;}
+        .comprar {
+                background: #a8f;
+                color: #103;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 4px;
+                font-size: 20px;}
+        .grid {display: grid; }
+        .preço {background: #ddd;
+                padding: 5px 10px;
+                border-radius: 4px;}
+
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <h1 class="titulo">Nimbus Stark</h1>
+        <span class="preço">R$ 5999,90</span>
+        <img class="foto" src="/Imagens/bicicleta.jpg" alt="Bicicleta Preta">
+        <p class="descr">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+        <a class="comprar" href="/">Comprar</a>
+    </div>
+</body>
+</html>
