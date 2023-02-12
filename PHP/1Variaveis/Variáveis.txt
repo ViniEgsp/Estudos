@@ -1,0 +1,65 @@
+Variáveis E Comandos De Saída
+Linguagem PHP
+Saber lidar com problemas requer atenção e boa performance de conhecimento de nosso raciocínio. Porém, é necessário considerar que ninguém ensina ninguém a pensar, pois todas as pessoas normais possuem esse “dom”.
+
+O objetivo deste material é apresentar de forma resumida a linguagem de programação PHP para desenvolvimento de sistemas computacionais, mostrando exemplos e diversos exercícios para você leitor possa desenvolver e aperfeiçoar essa técnica. Lembrando que para isso você deve ser persistente e praticá-la constantemente, chegando quase à exaustão sempre que julgar necessário.
+
+Algortimos
+Segundo Manzano um algoritmo é uma sequência finita de passos organizados que, quando executado, resolve um determinado problema.
+
+Podemos pensar em algoritmo como uma receita, uma sequência de instruções que resolvem de uma meta específica. Sempre que desenvolvemos um algoritmo estamos estabelecendo um padrão de comportamento que deverá ser seguido, uma norma de execução de ações para alcançar o resultado.
+
+Variáveis
+Variáveis são identificadores utilizados para representar valores mutáveis e voláteis que só existem durante a execução do programa. Elas são armazenadas na memória RAM e seu conteúdo é destruído após a execução do programa. Para criar uma variável em PHP precisamos atribuir-lhe um nome de identificação, sempre precedido pelo caractere cifrão ($).
+
+1$nome = "João";
+2$sobrenome = "da Silva";
+3$idade = 25;
+4$salario = 1250.00;
+
+
+
+
+Dicas para criação de variáveis:
+Nunca inicie a nomenclatura de variáveis com números.
+
+Nunca utilize espaços em branco no meio do identificador da variável. Evite criar variáveis com mais de 15 caracteres em virtude de clareza do código-fonte.
+Nomes de variáveis devem ser significativos e transmitir a ideia de seu conteúdo dentro do contexto no qual a variável está inserida.
+
+Utilize preferencialmente palavras em minúsculo (separadas pelo caractere “_”) ou somente as primeiras letras em maiúsculo quando da ocorrência de mais palavras.
+1$codigo_cliente;
+2$codigoCliente;
+
+
+O PHP é case sensitive, ou seja, e sensível a letras maiúsculas e minúsculas. Tome cuidado ao declarar variáveis e nome de função. Por exemplo, a variável $codigo é tratada de forma totalmente diferente da variável $Codigo
+
+Comandos de saída
+Estes são os comandos utilizados para gerar uma saída de tela.
+
+echo: é um comando que imprime uma ou mais variáveis no console. Exemplos:
+
+1echo "Escrever na tela";
+2echo "Hoje é $data";
+
+
+print: é uma função que imprime uma string no console. Exemplo:
+
+1print ('Escrever na tela'):
+
+print_r: imprime o conteúdo de uma variável do tipo array em um formato mais legível para o programador. Exemplo:
+
+1$vetor = array ( 'Palio', 'Gol', 'Fiesta', 'Corsa');
+2print_r($vetor);
+
+
+Resultado
+
+Array
+(
+[0] => Palio
+[1] => Gol
+[2] => Fiesta
+[3] => Corsa
+)
+
+

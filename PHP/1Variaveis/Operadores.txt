@@ -1,0 +1,87 @@
+ Operadores Aritméticos E Relacionais
+Linguagem PHP
+
+Saber lidar com problemas requer atenção e boa performance de conhecimento de nosso raciocínio. Porém, é necessário considerar que ninguém ensina ninguém a pensar, pois todas as pessoas normais possuem esse “dom”.
+
+O objetivo deste material é apresentar de forma resumida a linguagem de programação PHP para desenvolvimento de sistemas computacionais, mostrando exemplos e diversos exercícios para você leitor possa desenvolver e aperfeiçoar essa técnica. Lembrando que para isso você deve ser persistente e praticá-la constantemente, chegando quase à exaustão sempre que julgar necessário.
+
+Operador de atribuição
+Um operador de atribuição é utilizado para definir uma variável atribuindo-lhe um valor. O operador básico de atribuição é =
+
+1
+$numero= 5; 
+A variável $numero recebe o valor 5
+
+Operadores aritméticos
+Os operadores aritméticos atuam em operações de adição, subtração, multiplicação, divisão, etc..
+
++          Adição
+
+–             Subtração
+
+*            Multiplicação
+
+/             Divisão
+
+Exemplo:
+
+1$soma = $valor1 + $valor2;
+2$salario = $hora * $dias;
+
+
+Em cálculos complexos utilize parênteses para as prioridades aritméticas. Por exemplo:
+
+1$a = 2;
+2$b = 4;
+3echo $a + 3*4 + 5*$b;    // resultado = 34
+4echo ($a+3) * 4 + (5*$b)    // resultado 40
+
+
+
+
+Operadores relacionais
+Os operadores relacionais são utilizados para realizar comparações entre valores ou expressões, resultando sempre um valor verdadeiro ou falso.
+
+== Igual
+
+!= Diferente
+
+< Menor que
+
+> Maior que
+
+<= Menor ou igual
+
+>= Maior ou igual
+
+Exemplo:
+
+1<?php
+2$a = 1234;
+3$b = 1234;
+4if ($a == $b)
+5{
+6   echo "$a e $b são iguais";
+7}
+
+
+
+
+
+
+Exemplo prático
+Escreva um algoritmo em PHP para calcular a área de um retângulo.
+
+Solução:
+
+1<?php
+2$base = 10;
+3$altura = 20;
+4$area = $base * $altura;
+5echo "A área é: $area";
+6?>
+
+
+
+
+
