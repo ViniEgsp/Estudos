@@ -18,5 +18,6 @@
     <h1><?= $nome .' '. $sobrenome ?></h1> <!--Não sei o q deu errado (faltou espaço kkkk)-->
     <!--Forma 3-->
     <h1><?php echo $nome .' '. $sobrenome ?></h1>
+    <a href="/teste/PHP/2strings/005/exerci.php">Exercícios</a>
 </body>
 </html>
