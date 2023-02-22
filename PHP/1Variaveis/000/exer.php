@@ -33,8 +33,10 @@
 
     <?php
         $v1 = 100;
-        $v2 = 876; 
-        echo $r1 = $v1 /100 * 15 . '<br>';
+        $v2 = 876;
+        echo $v1 *=.15;
+        echo "<br>";
+        //echo $r1 = $v1 /100 * 15 . '<br>';
         echo $r2 = $v2 /100 * 15 . '<hr>';
         // Pesquisar o operador %.
         //Aceito explicação se vc estiver vendo isso kkkk
@@ -42,13 +44,32 @@
     <p>4 – Escreva um algoritmo que receba um valor, calcule e mostre para o usuário 5% e 50% deste valor.</p>
     <?php 
         $v1 = 1000;
-        echo $r1 = $v1 /100 * 5 . '<br>';
-        echo $r1 = $v1 /2 . '<hr>';
-        // Não me sai da cabeça que tô fazendo errado
+        //echo $r1 = $v1 /100 * 5 . '<br>';
+        //echo $v1 *=.05;
+        echo "<br>";
+        //echo "<br>";
+        echo $v1 *=.50;
+       // echo "<br>";
+        //echo $r1 = $v1 /2 . '<hr>';
+
+        // Não deu certo...a segunda operação imprime o resultado da percentagem da primeira operação, não da variável. Puts, será que tem q ser uma constante?
 
     ?>
     <p>5 – Escreva um algoritmo que leia dois números, calcule o quadrado de cada um, some os quadrados e mostre o resultado.</p><br>
-    <!--Pô! aí eu vou ter q voltar pra escolinha...-->
+    
+    <?php 
+        $a = 34;
+        $b = 93;
+        /*echo $a ."<br>";
+        echo $a**2 ."<br>";
+        echo "<br>";
+        echo $b ."<br>";  
+        echo $b**2 ."<br>";
+        echo "<br>";*/
+        echo $r1 = $a**2 + $b**2 ."<br>"; 
+        echo "<hr>";
+
+    ?>
     
 
 
