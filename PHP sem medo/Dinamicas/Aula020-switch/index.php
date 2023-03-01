@@ -25,6 +25,21 @@ switch ($valorSacar) {
         break;
 }
 echo '<hr>';
+// $estados = ['mg','es','pa','am','ms'];
+
+// foreach ( $estados as $estado) {
+//     echo '<br>';
+//     switch ($estado) {
+//         case 'mg ': echo'Minas Gerais';break;
+//         case 'es ': echo'Espirito Santo';break;
+        
+       
+//     }
+// }
+
+echo '<hr>';
+
+// outro exemplo
 
 switch (TRUE) {
     case ($valorSacar>100):
@@ -39,7 +54,7 @@ switch (TRUE) {
         echo 'Obrigado pela visita';
         break;
 }echo '<hr>';
-
+// outro exemplo
 switch (TRUE) {
    case ($valorSacar ==145); 
         echo "saldo insuficiente!";
